@@ -6,10 +6,20 @@ let currentPhotoIndex = 0;
 
 function showPhoto(index) {
   currentPhotoIndex = (index + galleryPhotos.length) % galleryPhotos.length;
-  const photo = galleryPhotos[currentPhotoIndex];
+  const requestedIndex = currentPhotoIndex;
+  const photo = galleryPhotos[requestedIndex];
   lightboxImage.src = photo.currentSrc || photo.src;
   lightboxImage.alt = photo.alt;
   lightboxCaption.textContent = photo.closest("figure").querySelector("figcaption").textContent;
+
+  const fullSrc = photo.dataset.full;
+  if (fullSrc) {
+    const fullImage = new Image();
+    fullImage.addEventListener("load", () => {
+      if (currentPhotoIndex === requestedIndex) lightboxImage.src = fullSrc;
+    });
+    fullImage.src = fullSrc;
+  }
 }
 
 function openLightbox(index) {

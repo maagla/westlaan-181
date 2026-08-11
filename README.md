@@ -9,7 +9,7 @@ Open `index.html` rechtstreeks in een browser. Er is geen buildstap of pakketins
 ## Inhoud aanpassen
 
 - Pas het telefoonnummer en e-mailadres aan in `index.html`.
-- Zet bijkomende foto's in de map `img/` en voeg ze in `index.html` toe aan het juiste niveau (`.gallery-level`), binnen een `.gallery-grid`.
+- Zet bijkomende foto's in de map `img/` en voeg ze in `index.html` toe aan het juiste niveau (`.gallery-level`), binnen een `.gallery-grid`. Genereer ook een kleine JPG met dezelfde bestandsnaam in `_thumbs/` (max. 400px breed) — de galerij toont die thumbnail meteen en laadt pas de volledige foto uit `img/` (via `data-full`) zodra iemand erop klikt.
 - Het contactformulier is een demo. Koppel voor publicatie een dienst zoals Formspree, Basin of Web3Forms, of gebruik een eigen backend.
 
 ## Publiceren via GitHub Pages

@@ -51,6 +51,7 @@ nav a, .header-contact { font-size: 13px; font-weight: 600; text-decoration: non
 .eyebrow.dark { color: var(--brick); }
 h1, h2 { margin: 0; font-family: var(--serif); font-weight: 400; letter-spacing: 0; }
 h1 { font-size: clamp(66px, 10vw, 150px); line-height: .82; }
+.hero-price { margin: 22px 0 0; color: var(--lime); font: 600 34px var(--sans); }
 .hero-intro { max-width: 610px; margin: 30px 0; font: 28px/1.25 var(--serif); }
 .hero-link { display: inline-flex; gap: 22px; align-items: center; font-size: 13px; font-weight: 600; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,.65); padding-bottom: 7px; }
 .hero-link span { font-size: 18px; }
